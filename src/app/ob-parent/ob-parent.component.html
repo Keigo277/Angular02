@@ -1,0 +1,4 @@
+<p>ob-parent works!</p>
+<input type="text" [(ngModel)]="text"/>
+<button (click)="onAction(text)">ボタン</button>
+<app-ob-child [events]="eventsSubject.asObservable()"></app-ob-child>

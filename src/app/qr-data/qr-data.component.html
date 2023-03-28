@@ -1,0 +1,13 @@
+<p>qr-data works!</p>
+<div>
+    <input type="text" [(ngModel)]="inputUrl"/>
+    <br/>
+    <br/>
+    <qrcode
+     [qrdata]="inputUrl",
+     [width]="256",
+     [errorCorrectionLevel]="'M'"
+    >
+    </qrcode>
+    
+</div>

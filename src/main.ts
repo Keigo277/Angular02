@@ -5,3 +5,11 @@ import { AppModule } from './app/app.module';
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+
+  export interface User{
+    name:string;
+    age:number;
+    job:string;
+    hobby:string;
+  }

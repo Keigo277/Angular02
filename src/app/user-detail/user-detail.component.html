@@ -1,0 +1,11 @@
+<div *ngIf="user; else notSelect">
+   名前：{{user.name}}
+   <br/>
+   年齢：{{user.age}}
+   <br/>
+   職業：{{user.job}}
+   <br/>
+   趣味：{{user.job}}
+   <br/>
+</div>
+<ng-template #notSelect></ng-template>

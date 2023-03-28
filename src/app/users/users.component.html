@@ -1,0 +1,7 @@
+
+<div *ngFor="let user of userList">
+  <button (button)="userSelect(user)">{{user.name}}</button>
+</div>
+<br/>
+
+<app-user-detail [user]="selectedUser"></app-user-detail>
